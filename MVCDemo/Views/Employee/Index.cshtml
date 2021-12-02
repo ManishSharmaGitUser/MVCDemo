@@ -1,4 +1,4 @@
-﻿
+﻿@model MVCDemo.Models.Employee
 @{
     Layout = null;
 }
@@ -16,5 +16,23 @@
     </div>
     <br />
     <a href="/Home/Index">Home Ka Index</a>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Address</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.Address</td>
+                
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
